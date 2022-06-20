@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Joan&family=Philosopher&family=Playfair+Display&family=Rajdhani:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+.kg {
+    margin: 0px 0px 0px 544px;
+    background-color: rgb(213, 228, 241);
+}
+
+.parts {
+    align-items: center;
+    font-size: large;
+    color: black;
+    height: 3.5rem;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px 48px 0px 0px;
+}
+
+.mid {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 251px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu {
+    width: 78px;
+    cursor: pointer;
+    align-items: center;
+    margin: 0px 0px 0px 484px
+}
+
+.msg {
+    text-align: center;
+
+}
+
+.deal {
+    font-size: 22px;
+    font-weight: bolder;
+    width: 66rem;
+    margin-top: 54px;
+    color: midnightblue
+}
+
+.text-center {
+    text-align: center;
+}
+
+.r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.c1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.c1 h2 {
+    font-size: 54px;
+}
+
+.c1 h3 {
+    font-size: 30px;
+    color: rgb(134, 63, 220);
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.c1 p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.c1 h4 {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.c1::before {
+    width: 10px;
+    height: 80%;
+    content: '';
+    background: linear-gradient(rgb(77, 208, 231), grey);
+    position: absolute;
+    left: -30px;
+
+}
+
+.h {
+    text-decoration: line-through;
+    display: inline;
+}
+
+button {
+    padding: 12px 10px;
+    width: 140px;
+    border: 0;
+    outline: none;
+    color: whitesmoke;
+    background: linear-gradient(to right, rgb(82, 213, 230), grey);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.c2 .ride {
+    width: 90%;
+}
+
+.transition:hover {
+    border-radius: 5rem;
+    width: 24rem;
+    height: 25rem;
+}
+
+.handle {
+    transform: translateX(136px);
+    position: absolute;
+    margin-left: 0px;
+    top: 0;
+    background: linear-gradient(grey, rgb(79, 222, 222));
+    border-radius: 46px 0 0 20px;
+    height: 100%;
+    width: 87%;
+    z-index: -1;
+}
+
+.footer {
+    background-color: azure;
+    margin: 0px 0px 0px -100px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: x-large;
+    color: black;
+    height: 43px;
+    width: 1263px;
+}
+
+@media only screen and (max-width:700px) {
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    nav ul li a {
+        color: brown;
+    }
+
+    .kg {
+        height: 86px;
+        width: 75px;
+    }
+
+    .parts {
+        font-size: smaller;
+        margin: 0px 0px 0px 342px;
+        height: 16px;
+        justify-content: space-evenly;
+        width: 0px;
+    }
+
+    .mid {
+        width: 100%;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        font-size: 15px;
+    }
+
+    .menu {
+        margin: 0px 0px 0px 88px;
+    }
+
+    .msg {
+        text-align: justify;
+        font-size: small;
+    }
+
+    .deal {
+        font-size: 22px;
+        font-weight: bolder;
+        width: 21rem;
+        margin-top: 54px;
+        color: midnightblue;
+    }
+
+    .r {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .c1 {
+        flex-basis: 100%;
+    }
+
+    .c1 h2 {
+        font-size: 35px;
+    }
+
+    .c1 h3 {
+        font-size: 15px;
+    }
+
+    .c2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .c2 .ride {
+        width: 77%;
+    }
+
+    .handle {
+        transform: translateX(75px);
+    }
+
+    .footer {
+        background-color: azure;
+        margin: 0px 0px 0px -5px;
+        text-align: center;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: large;
+        color: black;
+        height: 26px;
+        width: 351px;
+    }
+}
